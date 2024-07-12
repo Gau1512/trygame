@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Cricket</title>
+</head>
+<body>
+  <h1>Bat Ball Stump Games </h1>
+  <button onclick="
+  //this will generate random number b/w 0-3
+  let randomNumber=Math.random()*3;
+  let computerChoice;
+  let computerChoiceMsg;
+  
+  if(randomNumber > 0 && randomNumber <=1){
+     computerChoice='bat'
+     computerChoiceMsg='computer choice is bat';
+      } else if( randomNumber >1 && randomNumber<=2){
+     computerChoice='ball';
+     computerChoiceMsg='computer choice is ball';
+  } else{
+    computerChoice='stump';
+    computerChoiceMsg='computer choice is stump';
+  }
+
+
+  let resultMsg;
+  if(computerChoice==='ball'){
+  resultMsg='User Won';
+  } else if(computerChoice==='bat'){
+  resultMsg='This Match is Tie';
+  }
+  else{
+    resultMsg='computer Won';
+  }
+  alert(`You have Chosen bat. ${computerChoiceMsg} and  ${resultMsg}`);
+  "> bat</button>
+
+
+  <button onclick="
+ let randomNumber1=Math.random()*3;
+  let computerChoice2;
+  let computerChoiceMsg3;
+  
+  if(randomNumber1 > 0 && randomNumber1 <=1){
+     computerChoice2='bat'
+     computerChoiceMsg3='computer choice is bat';
+      } 
+ else if( randomNumber1 >1 && randomNumber1<=2){
+     computerChoice2='Ball';
+     computerChoiceMsg3='computer choice is Ball';
+  } else{
+    computerChoice2='stump';
+    computerChoiceMsg3='computer choice is stump';
+  }
+
+
+ let resultMsg1;
+  if(computerChoice2==='Ball'){
+  resultMsg1=' Match Tie';
+  } else if(computerChoice2==='bat'){
+  resultMsg1='computer  has Won';
+  }
+  else{
+    resultMsg1='User Won';
+  }
+  alert(`You have Chosen Ball. ${computerChoiceMsg3} and  ${resultMsg1}`);
+  "> Ball</button>
+
+
+
+<button onclick="
+ let randomNumber2=Math.random()*3;
+  let  computerChoice3;
+  let computerChoiceMsg4;
+   
+   if(randomNumber2 > 0 && randomNumber2 <=1){
+      computerChoice3='bat'
+      computerChoiceMsg4='computer choice is bat';
+       } 
+  else if( randomNumber2 >1 && randomNumber2<=2){
+      computerChoice3='Ball';
+      computerChoiceMsg4='computer choice is Ball';
+   } else{
+     computerChoice3='stump';
+     computerChoiceMsg4='computer choice is stump';
+   }
+ 
+ 
+ let  resultMsg2;
+   if(computerChoice3==='Ball'){
+   resultMsg2=' computer  has Won';
+   } else if(computerChoice3==='bat'){
+   resultMsg2='User Won';
+   }
+   else{
+     resultMsg2='match Tie';
+   }
+   alert(`You have Chosen Stump. ${computerChoiceMsg4} and  ${resultMsg2}`);
+   "> Stump</button>
+  
+</body>
+</html>
